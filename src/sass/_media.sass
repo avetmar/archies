@@ -1,0 +1,238 @@
+@media (prefers-reduced-motion: reduce)
+	*
+		animation-duration: 0.01ms !important
+		animation-iteration-count: 1 !important
+		transition-duration: 0.01ms !important
+		scroll-behavior: auto !important
+
+@media (max-width: 1508px)
+	html
+		font-size: 57%
+
+@media (max-width: 1376px)
+	html
+		font-size: 50%
+
+@media (max-width: 1210px)
+		.services
+			&__cards
+				grid-template-columns: repeat(2, 1fr)
+
+@media (max-width: 1040px)
+	.carousel
+		width: 100%
+	.details
+		background: none
+	.details__wrapper
+		flex-direction: column
+		align-items: center
+	.details__contact
+		margin-bottom: 40px
+	.details__touch_title
+		text-align: center
+
+@media (max-width: 990px)
+	.about
+		&__wrapper
+			grid-template-columns: repeat(2, 1fr)
+	.promo
+		background: url(../img/plumber.webp) right 0 / contain no-repeat
+	.contacts
+		background: url(../img/plumber2.webp) left 0 / contain no-repeat, $blue
+
+@media (max-width: 990px)
+	.promo
+		background: url(../img/plumber.webp) 120% / contain no-repeat
+	.contacts
+		background: url(../img/plumber2.webp) -20% / contain no-repeat, $blue
+
+@media (max-width: 768px)
+	.promo
+		background: url(../img/plumber.webp) 150% / contain no-repeat
+	.contacts
+		background: url(../img/plumber2.webp) -50% / contain no-repeat, $blue
+	.footer
+		&__wrapper
+			flex-direction: column
+			align-items: center
+			gap: 4rem
+		&__list
+			text-align: center
+			ul
+				margin-top: 2rem
+			.instagram_icon
+				margin: 2rem auto 0 auto
+	.ft_links
+		flex-direction: column
+		gap: 2rem
+		align-items: center
+
+	.header
+		&__text
+			&_title
+				font-size: 16px
+			&_subtitle
+				font-size: 12px
+		&__navigation
+			// display: none
+		.hamburger
+			display: block
+		&__navigation
+			display: flex
+			align-items: center
+			justify-content: center
+			position: fixed
+			top: 0
+			right: -100%
+			width: 50%
+			height: 100vh
+			padding: 15px 20px
+			background: #fffffff3
+			transition: .6s all
+			&_active
+				right: 0
+			ul	
+				display: flex
+				min-width: inherit
+				flex-direction: column
+				gap: 40px
+				font-size: 20px
+				align-items: center
+@media (max-width: 768px)
+	.promo
+		background: url(../img/plumber.webp) right -250px top 0  / contain no-repeat
+	.contacts
+		background: url(../img/plumber2.webp) left -250px bottom 0 / contain no-repeat, $blue
+	.services
+		.cardM
+			padding: 20px
+			gap: 20px
+			grid-template-rows: repeat(3, min-content)
+			grid-template-columns: 1fr
+			.btn
+				grid-column: 1 / 2
+
+@media (max-width: 670px)
+	.contacts
+		.button__wrapper
+			flex-direction: column
+		&__wrapper-text
+			padding: 18rem 0
+
+@media (max-width: 640px)
+	.promo__advantages
+		display: flex
+		justify-content: space-between
+		gap: 20px
+	.services__cards
+		margin-bottom: 6rem
+		display: grid
+		grid-template-columns: 1fr
+		grid-template-rows: min-content
+		gap: 3rem
+		justify-items: center
+	.carousel
+		height: 350px
+		img
+			height: 350px
+	.contacts__wrapper-text
+		align-items: center
+		text-align: center
+
+@media (max-width: 518px)
+	.btn
+		width: 100%
+	.container
+		padding: 0 15px
+	h1, .contacts__title
+		font-size: 30px
+	h2
+		font-size: 26px
+	h5
+		font-size: 13px
+
+	.about__wrapper
+		grid-template-columns: 1fr
+	.contacts
+		.button__wrapper
+			max-width: inherit
+			width: 100%
+	
+	.details__contact
+		max-width: inherit
+		padding: 10px
+		width: 100%
+		&_content
+			gap: 16px
+		&_icon
+			width: 45px
+			height: 45px
+	.details__touch
+		width: 100%
+	.details
+		.feed-form
+			grid-template-columns: 100%
+			.massage
+				grid-column: 1 / 1
+		.details__contact_descr-anim, .details__contact_descr
+			font-size: 16px
+@media (max-width: 450px)
+	.promo
+		background: none
+	.contacts
+		background: $blue
+	.details
+		.details__contact_descr-anim, .details__contact_descr
+			font-size: 12px
+	.page404
+		&__wrapper
+			&_title
+				font-size: 20rem
+			&_subtitle
+				margin-bottom: 20px
+			&_buttons
+				flex-direction: column
+
+@media (max-width: 410px)
+	h1, .contacts__title, .phone-big
+		font-size: 25px
+	h2
+		font-size: 22px
+	h3
+		font-size: 18px
+		span
+			font-size: 18px
+
+	.promo__advantages
+		margin-bottom: 7rem
+		.score
+			font-size: 22px
+			font-weight: 700
+			color: $blue
+		.descr
+			font-size: 14px
+	.details
+		.details__contact_descr-anim, .details__contact_descr
+			font-size: 10px
+@media (max-width: 380px)
+	.page404
+		&__wrapper
+			&_title
+				font-size: 100px
+			&_subtitle
+				font-size: 20px
+				margin-bottom: 20px
+			&_descr
+				font-size: 12px
+
+@media (max-width: 340px)
+	.carousel
+		height: 250px
+		img
+			height: 250px
+	.details__contact
+		max-width: inherit
+		padding: 10px
+		width: 100%
+		&_content
+			gap: 10px

@@ -1,0 +1,63 @@
+.header
+	padding: 3rem 0
+	z-index: 10
+	&__wrapper
+		display: flex
+		gap: 2rem
+		align-items: center
+		img
+			max-width: inherit
+	&__text
+		width: 100%
+		&_title
+			color: $blue
+			font-size: 2.5rem
+			font-weight: 700
+		&_subtitle
+			color: $orange
+			font-size: 2rem
+			font-weight: 700
+	&__navigation
+		z-index: 10
+		ul
+			display: flex
+			justify-content: flex-end
+			transform-style-type: none
+			gap: 3rem
+			min-width: 47.5rem
+			color: $text
+			font-size: 1.8rem
+			font-weight: 500
+			.nav_active
+				color: $orange
+			.nav_hover
+				transition: .4s all
+				&:hover              
+					transform: translateY(-3px)
+			a
+				transition: .4s all
+				color: $text
+				&:hover
+					color: $orange
+	.hamburger
+		z-index: 15
+		display: none
+		width: 40px
+		height: 18px
+		span
+			display: block
+			height: 3px
+			width: 100%
+			background: $text
+			margin-bottom: 3px
+			transition: .5s all
+		&_active
+			span
+				margin-bottom: -3px
+				&:nth-child(1)
+					transform: rotate(-45deg)
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: rotate(45deg)
+						

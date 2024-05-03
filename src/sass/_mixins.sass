@@ -1,0 +1,113 @@
+h1
+	font-size: 4.5rem
+	font-weight: 700
+	text-transform: uppercase
+	color: $blue
+
+h2
+	font-size: 4rem
+	font-weight: 700
+	text-transform: uppercase
+	color: $blue
+
+h3
+	font-size: 2.4rem
+	font-weight: 600
+	color: $blue
+
+h4
+	font-size: 2.4rem
+	font-weight: 600
+	text-transform: uppercase
+	color: $blue
+
+h5
+	font-size: 2rem
+	line-height: 140%
+
+p
+	line-height: 140%
+
+.btn
+	display: inline-flex
+	align-items: center
+	padding: 2rem 5rem
+	gap: 3rem
+	color: $white
+	font-size: 2rem
+	font-weight: 600
+	background: $blue
+	border: none
+	border-radius: 90rem
+	box-shadow: inset 0 4px 4px 0 rgba(255, 255, 255, 0.25), inset 0 -4px 4px 0 rgba(255, 255, 255, 0.25)
+	text-transform: uppercase
+	justify-content: center
+	transition: .4s all
+	cursor: pointer
+	&:hover		
+		background: $orange
+		transform: translateY(-3px)
+		box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.25)
+		
+
+.white
+	color: $text
+	background: $white
+	cursor: pointer
+	&:hover, &:focus		
+		color: $white
+
+.btn-text
+	font-weight: 600
+	font-size: 2rem
+	color: $blue
+	text-align: center
+	margin-bottom: 4rem
+	transition: .3s all
+	cursor: pointer
+	&:hover, &:focus		
+		color: $orange
+		transform: translateY(-3px)
+
+.card, .cardX
+	border: .1rem solid $text
+	border-radius: 2rem
+	height: 62.3rem
+	width: 33rem
+	overflow: hidden
+	display: grid
+	grid-template-rows: 26rem 9rem min-content 1fr min-content
+	grid-template-columns: 1fr
+	justify-items: center
+	box-shadow: 5px 5px 7px 0 rgba(0, 0, 0, 0.25)
+	&__image
+		height: 100%
+		object-fit: cover
+	&__icon
+		position: relative
+		top: -4.75rem
+	&__title
+		margin: 0 2rem 2rem 2rem
+		span
+			font-size: 1.8rem
+			color: $blue
+	&__descr
+		margin: 0 2rem
+
+.cardM
+	border: .1rem solid $text
+	border-radius: 2rem
+	display: grid
+	padding: 4rem
+	gap: 4rem
+	grid-template-rows: min-content min-content
+	grid-template-columns: 40rem minmax(min-content, 90rem)
+	justify-items: center
+	box-shadow: 5px 5px 7px 0 rgba(0, 0, 0, 0.25)
+	margin-bottom: 6rem
+	.btn
+		grid-column: 2 / 3
+	&__image
+		height: inherit
+	p
+		text-align: left
